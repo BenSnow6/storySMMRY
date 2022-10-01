@@ -5,7 +5,7 @@
 
 - Creating better natural language processing to create better tags for short story recommendations
 
-We tested the API locally for TLDR summarisation and it worked fine. We want to try testing with creating our own tags instead of summaries. I guess summaries and tags are fairly similar though.
+We tested the API locally for TLDR summarisation and it worked fine. We want to try testing with creating our own tags instead of summaries.
 
 Along with this, we spent some time discussing the usefulness of better tagging and the difficulties in a few areas (finding similar literature, book recommendations, product tagging) to better motivate the topic choice.
 
