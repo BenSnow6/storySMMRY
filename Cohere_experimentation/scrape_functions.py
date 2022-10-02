@@ -23,17 +23,20 @@ def get_tags(soup):
     tags.append(','.join(tag_holder))
     return tags[0]
 
-def scrape_content(soup):
+def scrape_content(soup, url):
     title = []
     body = []
     tags = []
+    urls = []
     title.append(get_title(soup))
     body.append(get_body(soup))
-    tags.append(get_tags(soup))
-    return pd.DataFrame({'Article title':title,'Body':body,'Tags':tags}) 
+    urls.append(url)
+    tags.append('')
+    ## tags.append(get_tags(soup))
+    return pd.DataFrame({'Article title':title,'Body':body, 'URL':url, 'Tags':tags})
 
 def scrape_URL(url, driver):
     driver.get(url)
     content = driver.page_source
     soup = BeautifulSoup(content, features="lxml")
-    return scrape_content(soup)
+    return scrape_content(soup, url)
