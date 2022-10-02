@@ -24,7 +24,7 @@ Can natural language processing be used to improve the reccomendation system for
 ## Project description
 Curently, the reccomendation system for short stories is based on tags. These tags are created by humans and are fairly general. We want to see if we can use natural language processing to create tags that reflect the content of the story more accurately. We wish for tags to include details such as common tropes and themes. We particularly like the work of the website [doesthedogdie.com](https://doesthedogdie.com/) which lets users filter popular media for unsettling topics, such as a dog dying in a movie. We want to see if we can use similar techniques to create tags that are more specific to the content of the story.
 
-**Ellena will be able to give a much more informed motivation on the topic choice due to her experience with the current system!!**
+**Liberty will be able to give a much more informed motivation on the topic choice due to her experience with the current system!!**
 
 ## Project goals
 - Create a corpus of short stories from the reedsy website
