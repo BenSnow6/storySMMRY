@@ -17,7 +17,7 @@ Curently, the reccomendation system for short stories is based on tags. These ta
 ## Project goals
 - Create a corpus of short stories from the reedsy website
 - Hand tag a subset of the corpus with our more specific tags
-- Train a Co:here model to classify other stories in the corpus with tags similar to ours
+- Use natural language processing to create tags for the rest of the corpus
 - Create an embedding from the tags to allow stories to be compared with one another
 - Create a lightweight web app to allow a user to input a story from reedsly and get a list of similar stories based on the generated tags and similarity of the embeddings
 
