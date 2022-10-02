@@ -11,7 +11,7 @@ import math
 load_dotenv()
 
 # initialise the Co:here client
-co = cohere.Client('qMZyaTV7kacsOvoFZB090fuj5npxo5UdSSc9ur2O')
+co = cohere.Client('') ## set your api key here
 # start the web driver
 driver = webdriver.Chrome(ChromeDriverManager().install())
 # read in the stories with tags and urls
@@ -24,7 +24,6 @@ if 'output' not in st.session_state:
 # Predict tags for the input url
 def predict_tags(index, df, scraped_url):
     number_chars = 1500
-    co = cohere.Client(os.getenv('COHERE_API_KEY'))
     response = co.generate(
     model='large',
     prompt=f"Passage: {df['Body'].values[0][:number_chars]}\n\nTags:{df['Tags'][0]}\n--\nPassage:{df['Body'].values[1][:number_chars]}\n\nTLDR:{df['Tags'][1]}\n--\nPassage:{df['Body'].values[2][:number_chars]}\n\nTLDR:{df['Tags'][2]}\n--\nPassage:{scraped_url['Body'].values[0][:number_chars]}\n\Tags:",
